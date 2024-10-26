@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse", "NailWareho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NailWarehouse.Manager", "NailWarehouse.Manager\NailWarehouse.Manager.csproj", "{1D4B7EA8-6E42-4CFB-BAA6-4A244DCC1C10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NailWarehouse.Memory", "NailWarehouse.Memory\NailWarehouse.Memory.csproj", "{487F8BE5-4DF0-468C-8F97-306BB48C0FD9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NailWarehouse.Models", "NailWarehouse.Models\NailWarehouse.Models.csproj", "{B46521F0-7BE8-48DE-AFD0-E961E08FAB3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NailWarehouse.Memory", "NailWarehouse.Memory\NailWarehouse.Memory.csproj", "{6CC91D4A-0B43-44C1-8AA0-68E6430D8FE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{1D4B7EA8-6E42-4CFB-BAA6-4A244DCC1C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D4B7EA8-6E42-4CFB-BAA6-4A244DCC1C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4B7EA8-6E42-4CFB-BAA6-4A244DCC1C10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{487F8BE5-4DF0-468C-8F97-306BB48C0FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{487F8BE5-4DF0-468C-8F97-306BB48C0FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{487F8BE5-4DF0-468C-8F97-306BB48C0FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{487F8BE5-4DF0-468C-8F97-306BB48C0FD9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B46521F0-7BE8-48DE-AFD0-E961E08FAB3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B46521F0-7BE8-48DE-AFD0-E961E08FAB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B46521F0-7BE8-48DE-AFD0-E961E08FAB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B46521F0-7BE8-48DE-AFD0-E961E08FAB3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC91D4A-0B43-44C1-8AA0-68E6430D8FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC91D4A-0B43-44C1-8AA0-68E6430D8FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC91D4A-0B43-44C1-8AA0-68E6430D8FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC91D4A-0B43-44C1-8AA0-68E6430D8FE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -38,6 +38,9 @@
     <ApplicationIcon>Resources\nail.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NailWarehouse.Memory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TaniachiFractal.NailWarehouse.Memory.1.0.0\lib\netstandard2.0\NailWarehouse.Memory.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -96,6 +99,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,10 +124,6 @@
     <ProjectReference Include="..\NailWarehouse.Manager\NailWarehouse.Manager.csproj">
       <Project>{1d4b7ea8-6e42-4cfb-baa6-4a244dcc1c10}</Project>
       <Name>NailWarehouse.Manager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NailWarehouse.Memory\NailWarehouse.Memory.csproj">
-      <Project>{487f8be5-4df0-468c-8f97-306bb48c0fd9}</Project>
-      <Name>NailWarehouse.Memory</Name>
     </ProjectReference>
     <ProjectReference Include="..\NailWarehouse.Models\NailWarehouse.Models.csproj">
       <Project>{b46521f0-7be8-48de-afd0-e961e08fab3f}</Project>
