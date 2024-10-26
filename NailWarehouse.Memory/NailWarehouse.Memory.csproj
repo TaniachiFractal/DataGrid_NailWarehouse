@@ -1,11 +1,29 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Nail warehouse data storage</Title>
+    <Authors>Maslova T.</Authors>
+    <Company>Taniachi Fractal</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/TaniachiFractal/DataGrid_NailWarehouse</RepositoryUrl>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+    <PackageId>TaniachiFractal.$(AssemblyName)</PackageId>    <AssemblyVersion></AssemblyVersion>    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NailWarehouse.Models\NailWarehouse.Models.csproj" />
+    <!-- modified this ProjectReference to include the children ReferenceOutputAssembly and IncludeAssets -->
+    <ProjectReference Include="..\NailWarehouse.Models\NailWarehouse.Models.csproj">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <IncludeAssets>NailWarehouse.Models.dll</IncludeAssets>
+    </ProjectReference>
   </ItemGroup>
 
+  <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+    </ItemGroup>
+  </Target>
+
+  <!--https://stackoverflow.com/questions/16173568/build-nuget-package-automatically-including-referenced-dependencies-->
 </Project>

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{705DAA0D-217D-43A6-A72C-57BFD277C8C2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>task3_DataGrid_v1NailWarehouse</RootNamespace>
-    <AssemblyName>task3_DataGrid_v1NailWarehouse</AssemblyName>
+    <RootNamespace>DataGrid_NailWarehouse</RootNamespace>
+    <AssemblyName>DataGrid_NailWarehouse</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -38,8 +38,11 @@
     <ApplicationIcon>Resources\nail.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NailWarehouse.Memory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TaniachiFractal.NailWarehouse.Memory.1.0.0\lib\netstandard2.0\NailWarehouse.Memory.dll</HintPath>
+    <Reference Include="NailWarehouse.Memory, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TaniachiFractal.NailWarehouse.Memory.1.0.2\lib\netstandard2.0\NailWarehouse.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="NailWarehouse.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TaniachiFractal.NailWarehouse.Memory.1.0.2\lib\netstandard2.0\NailWarehouse.Models.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -124,10 +127,6 @@
     <ProjectReference Include="..\NailWarehouse.Manager\NailWarehouse.Manager.csproj">
       <Project>{1d4b7ea8-6e42-4cfb-baa6-4a244dcc1c10}</Project>
       <Name>NailWarehouse.Manager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NailWarehouse.Models\NailWarehouse.Models.csproj">
-      <Project>{b46521f0-7be8-48de-afd0-e961e08fab3f}</Project>
-      <Name>NailWarehouse.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
