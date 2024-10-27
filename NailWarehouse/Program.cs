@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
+using Microsoft.Extensions.Logging;
+using NailWarehouse.Forms;
 using NailWarehouse.Manager;
 using NailWarehouse.Memory;
-using NailWarehouse.Forms;
-using Microsoft.Extensions.Logging;
 
 namespace NailWarehouse
 {
@@ -17,7 +17,6 @@ namespace NailWarehouse
         {
             var factory = LoggerFactory.Create(builder => builder.AddDebug());
             var logger = factory.CreateLogger("NailWarehouse");
-            logger.LogInformation("The app is starting");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using NailWarehouse.Manager.Helpers;
+using NailWarehouse.Manager.Models;
 using NailWarehouse.Models;
 using NailWarehouse.Models.Interfaces;
 
