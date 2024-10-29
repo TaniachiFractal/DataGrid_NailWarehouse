@@ -1,5 +1,6 @@
 ﻿using NailWarehouse.Models.Interfaces;
-namespace NailWarehouse.Manager
+
+namespace NailWarehouse.Manager.Models
 {
     /// <summary>
     /// Вычисляемые данные о списке <see cref="Nail"/>

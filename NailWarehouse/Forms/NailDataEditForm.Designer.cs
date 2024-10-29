@@ -94,7 +94,7 @@
             // 
             // pictureNail
             // 
-            this.pictureNail.Image = global::task3_DataGrid_v1NailWarehouse.Properties.Resources.nailPng;
+            this.pictureNail.Image = global::DataGrid_NailWarehouse.Properties.Resources.nailPng;
             this.pictureNail.Location = new System.Drawing.Point(12, 12);
             this.pictureNail.Name = "pictureNail";
             this.pictureNail.Size = new System.Drawing.Size(80, 80);

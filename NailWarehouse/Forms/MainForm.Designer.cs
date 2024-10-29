@@ -144,7 +144,7 @@
             // addButton
             // 
             this.addButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.addButton.Image = global::task3_DataGrid_v1NailWarehouse.Properties.Resources.addIco;
+            this.addButton.Image = global::DataGrid_NailWarehouse.Properties.Resources.addIco;
             this.addButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(23, 22);
@@ -154,7 +154,7 @@
             // removeButton
             // 
             this.removeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.removeButton.Image = global::task3_DataGrid_v1NailWarehouse.Properties.Resources.removeIco;
+            this.removeButton.Image = global::DataGrid_NailWarehouse.Properties.Resources.removeIco;
             this.removeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(23, 22);
@@ -164,7 +164,7 @@
             // editButton
             // 
             this.editButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.editButton.Image = global::task3_DataGrid_v1NailWarehouse.Properties.Resources.editIco;
+            this.editButton.Image = global::DataGrid_NailWarehouse.Properties.Resources.editIco;
             this.editButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(23, 22);

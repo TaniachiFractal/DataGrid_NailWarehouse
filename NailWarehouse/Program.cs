@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
+using Microsoft.Extensions.Logging;
+using NailWarehouse.Forms;
 using NailWarehouse.Manager;
 using NailWarehouse.Memory;
-using NailWarehouse.Forms;
 
 namespace NailWarehouse
 {
@@ -14,10 +15,15 @@ namespace NailWarehouse
         [STAThread]
         private static void Main()
         {
+            var factory = LoggerFactory.Create(builder => builder.AddDebug());
+            var logger = factory.CreateLogger("NailWarehouse");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             var storage = new MemoryNailStorage();
-            var manager = new NailManager(storage);
+            var manager = new NailManager(storage, logger);
+
             Application.Run(new MainForm(manager));
         }
     }

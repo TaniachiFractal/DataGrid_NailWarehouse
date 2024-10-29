@@ -77,18 +77,11 @@ namespace NailWarehouse.Forms
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            if (ValidateNail(currNail))
+            if (currNail.ValidateNail())
             {
                 DialogResult = DialogResult.OK;
                 Close();
             }
-        }
-
-        private bool ValidateNail(ValidatableNail nail)
-        {
-            var context = new ValidationContext(nail, serviceProvider: null, items: null);
-            var results = new List<ValidationResult>();
-            return Validator.TryValidateObject(nail, context, results, true);
         }
 
     }

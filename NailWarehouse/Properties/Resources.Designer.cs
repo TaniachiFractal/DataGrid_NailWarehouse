@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace task3_DataGrid_v1NailWarehouse.Properties {
+namespace DataGrid_NailWarehouse.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace task3_DataGrid_v1NailWarehouse.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("task3_DataGrid_v1NailWarehouse.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DataGrid_NailWarehouse.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

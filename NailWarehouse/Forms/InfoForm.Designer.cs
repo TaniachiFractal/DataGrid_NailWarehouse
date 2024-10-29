@@ -102,7 +102,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::task3_DataGrid_v1NailWarehouse.Properties.Resources.removeIco;
+            this.pictureBox3.Image = global::DataGrid_NailWarehouse.Properties.Resources.removeIco;
             this.pictureBox3.Location = new System.Drawing.Point(439, 189);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(16, 16);
@@ -112,7 +112,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::task3_DataGrid_v1NailWarehouse.Properties.Resources.editIco;
+            this.pictureBox2.Image = global::DataGrid_NailWarehouse.Properties.Resources.editIco;
             this.pictureBox2.Location = new System.Drawing.Point(446, 117);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 16);
@@ -122,7 +122,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::task3_DataGrid_v1NailWarehouse.Properties.Resources.addIco;
+            this.pictureBox1.Image = global::DataGrid_NailWarehouse.Properties.Resources.addIco;
             this.pictureBox1.Location = new System.Drawing.Point(305, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(16, 16);

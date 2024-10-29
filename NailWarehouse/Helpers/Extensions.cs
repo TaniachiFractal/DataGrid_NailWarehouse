@@ -6,6 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Windows.Forms;
+using NailWarehouse.ValidatableModels;
 
 namespace NailWarehouse.Helpers
 {
@@ -80,8 +81,16 @@ namespace NailWarehouse.Helpers
         }
 
         /// <summary>
-        /// Получить имя нужного поля
+        /// Валидировать гвоздь
         /// </summary>
+        public static bool ValidateNail<T>(this T nail)
+            where T : ValidatableNail
+        {
+            var context = new ValidationContext(nail, serviceProvider: null, items: null);
+            var results = new List<ValidationResult>();
+            return Validator.TryValidateObject(nail, context, results, true);
+        }
+
         private static string GetMemberName<TItem, TMember>(Expression<Func<TItem, TMember>> targetMember)
         {
             if (targetMember.Body is MemberExpression memberExpression)
