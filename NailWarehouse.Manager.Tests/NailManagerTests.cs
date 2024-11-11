@@ -10,6 +10,9 @@ using Xunit;
 
 namespace NailWarehouse.Manager.Tests
 {
+    /// <summary>
+    /// Тесты для <see cref="NailManager"/>
+    /// </summary>
     public class NailManagerTests
     {
         private readonly INailManager nailManager;
