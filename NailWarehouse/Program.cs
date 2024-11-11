@@ -18,7 +18,7 @@ namespace NailWarehouse
         {
             var serilogLogger = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
-                .WriteTo.Seq("http://localhost:5341", apiKey: "fgySxAGGktcEozAbLtIR")
+                //.WriteTo.Seq("http://localhost:5341", apiKey: "fgySxAGGktcEozAbLtIR")
                 .WriteTo.Debug()
                 .CreateLogger();
 
