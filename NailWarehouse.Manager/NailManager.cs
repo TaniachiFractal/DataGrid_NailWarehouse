@@ -46,7 +46,7 @@ namespace NailWarehouse.Manager
                     nail.Id,
                     stopwatch.ElapsedMilliseconds,
                     ex.Message,
-                    nail.Name
+                    nail
                     );
                 return null;
             }
@@ -57,7 +57,7 @@ namespace NailWarehouse.Manager
                 nameof(INailManager.AddAsync),
                 nail.Id,
                 stopwatch.ElapsedMilliseconds,
-                nail.Name
+                nail
                 );
             return result;
         }
@@ -107,7 +107,7 @@ namespace NailWarehouse.Manager
                          nail.Id,
                          stopwatch.ElapsedMilliseconds,
                          ex.Message,
-                         nail.Name
+                         nail
                          );
             }
 
@@ -115,7 +115,7 @@ namespace NailWarehouse.Manager
             LoggingMethods.LogInfoNail(logger, nameof(INailManager.EditAsync),
                     nail.Id,
                     stopwatch.ElapsedMilliseconds,
-                    nail.Name
+                    nail
                 );
         }
 
@@ -136,7 +136,7 @@ namespace NailWarehouse.Manager
         {
             try
             {
-                var result = await nailStorage.GetAllAsync();
+                IReadOnlyCollection<Nail> result = await nailStorage.GetAllAsync();
                 return new NailStats
                 {
                     FullCount = result.Count,
