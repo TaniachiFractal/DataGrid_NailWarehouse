@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using Microsoft.Extensions.Logging;
 using NailWarehouse.Forms;
 using NailWarehouse.Manager;
 using NailWarehouse.Memory;
@@ -19,6 +18,7 @@ namespace NailWarehouse
         {
             var serilogLogger = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
+                .WriteTo.Seq("http://localhost:5341", apiKey: "fgySxAGGktcEozAbLtIR")
                 .WriteTo.Debug()
                 .CreateLogger();
 
