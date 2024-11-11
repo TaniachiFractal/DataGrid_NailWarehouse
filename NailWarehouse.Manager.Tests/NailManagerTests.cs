@@ -30,12 +30,6 @@ namespace NailWarehouse.Manager.Tests
         }
 
         [Fact]
-        public void TryTest()
-        {
-            Assert.Contains("aa", "aa");
-        }
-
-        [Fact]
         public async Task AddShouldWork()
         {
             // Arrange

@@ -14,12 +14,6 @@ namespace NailWarehouse.Memory.Tests
     {
         private readonly INailStorage nailStorage;
 
-        [Fact]
-        public void TryTest()
-        {
-            Assert.Contains("aa", "aa");
-        }
-
         /// <summary>
         /// Конструтор 
         /// </summary>

@@ -4,6 +4,8 @@ using Microsoft.Extensions.Logging;
 using NailWarehouse.Forms;
 using NailWarehouse.Manager;
 using NailWarehouse.Memory;
+using Serilog;
+using Serilog.Extensions.Logging;
 
 namespace NailWarehouse
 {
@@ -15,8 +17,13 @@ namespace NailWarehouse
         [STAThread]
         private static void Main()
         {
-            var factory = LoggerFactory.Create(builder => builder.AddDebug());
-            var logger = factory.CreateLogger("NailWarehouse");
+            var serilogLogger = new LoggerConfiguration()
+                .MinimumLevel.Verbose()
+                .WriteTo.Debug()
+                .CreateLogger();
+
+            var logger = new SerilogLoggerFactory(serilogLogger)
+                .CreateLogger("NailWarehouse");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
