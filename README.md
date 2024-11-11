@@ -5,4 +5,5 @@
 ### Задание 7: Логирование модуля управления
 ### Задание 8: Логирование модуля управления при помощи Serilog и Seq
 ![Seq screenshot](https://github.com/TaniachiFractal/DataGrid_NailWarehouse/blob/feature/SeqScreenshot.png)
+### Задание 9: Юнит-тесты модулей хранилища и управления
 

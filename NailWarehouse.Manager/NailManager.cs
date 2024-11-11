@@ -136,7 +136,7 @@ namespace NailWarehouse.Manager
         {
             try
             {
-                var result = await nailStorage.GetAllAsync();
+                IReadOnlyCollection<Nail> result = await nailStorage.GetAllAsync();
                 return new NailStats
                 {
                     FullCount = result.Count,
