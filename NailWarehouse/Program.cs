@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using NailWarehouse.Forms;
 using NailWarehouse.Manager;
 using NailWarehouse.Memory;
+using NailWarehouse.Memory.Database;
 using Serilog;
 using Serilog.Extensions.Logging;
 
@@ -28,7 +29,7 @@ namespace NailWarehouse
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var storage = new MemoryNailStorage();
+            var storage = new DBNailStorage();
             var manager = new NailManager(storage, logger);
 
             Application.Run(new MainForm(manager));
