@@ -8,6 +8,9 @@ using NailWarehouse.Models.Interfaces;
 
 namespace NailWarehouse.Memory.Database
 {
+    /// <summary>
+    /// Методы для работы с <see cref="NailWarehouseContext"/>
+    /// </summary>
     public class DBNailStorage : INailStorage
     {
         async Task<Nail> INailStorage.AddAsync(Nail nail)
