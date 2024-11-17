@@ -9,7 +9,7 @@ using NailWarehouse.Models.Interfaces;
 namespace NailWarehouse.Memory.Database
 {
     /// <summary>
-    /// Методы для работы с <see cref="NailWarehouseContext"/>
+    /// Методы для работы с контекстом базы данных склада гвоздей <see cref="NailWarehouseContext"/>
     /// </summary>
     public class DBNailStorage : INailStorage
     {

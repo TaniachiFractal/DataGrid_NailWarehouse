@@ -89,12 +89,6 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="NailWarehouse.Memory, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TaniachiFractal.NailWarehouse.Memory.1.0.3\lib\netstandard2.0\NailWarehouse.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="NailWarehouse.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TaniachiFractal.NailWarehouse.Memory.1.0.3\lib\netstandard2.0\NailWarehouse.Models.dll</HintPath>
-    </Reference>
     <Reference Include="Serilog, Version=4.1.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <HintPath>..\packages\Serilog.4.1.0\lib\net471\Serilog.dll</HintPath>
     </Reference>
@@ -276,6 +270,10 @@
     <ProjectReference Include="..\NailWarehouse.Memory.Database\NailWarehouse.Memory.Database.csproj">
       <Project>{0119fcda-396e-44e7-91aa-c22c024f33ac}</Project>
       <Name>NailWarehouse.Memory.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NailWarehouse.Models\NailWarehouse.Models.csproj">
+      <Project>{B46521F0-7BE8-48DE-AFD0-E961E08FAB3F}</Project>
+      <Name>NailWarehouse.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
