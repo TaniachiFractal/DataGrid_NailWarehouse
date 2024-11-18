@@ -42,6 +42,7 @@ namespace NailWarehouse.Forms
 
         private async void UpdateData()
         {
+            nailBindingSource.DataSource = await nailManager.GetAllAsync();
             nailBindingSource.ResetBindings(false);
             await SetStats();
         }

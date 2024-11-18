@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using NailWarehouse.Forms;
 using NailWarehouse.Manager;
-using NailWarehouse.Memory;
+using NailWarehouse.Memory.Database;
 using Serilog;
 using Serilog.Extensions.Logging;
 
@@ -18,7 +18,7 @@ namespace NailWarehouse
         {
             var serilogLogger = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
-                .WriteTo.Seq("http://localhost:5341", apiKey: "fgySxAGGktcEozAbLtIR")
+                //.WriteTo.Seq("http://localhost:5341", apiKey: "fgySxAGGktcEozAbLtIR")
                 .WriteTo.Debug()
                 .CreateLogger();
 
@@ -28,7 +28,7 @@ namespace NailWarehouse
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var storage = new MemoryNailStorage();
+            var storage = new DBNailStorage();
             var manager = new NailManager(storage, logger);
 
             Application.Run(new MainForm(manager));
