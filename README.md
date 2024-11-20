@@ -6,4 +6,4 @@
 ### Задание 8: Логирование модуля управления при помощи Serilog и Seq
 ![Seq screenshot](https://github.com/TaniachiFractal/DataGrid_NailWarehouse/blob/master/SeqScreenshot.png)
 ### Задание 9: Юнит-тесты модулей хранилища и управления
-### Задание 10: Работа с базой данных через ORM 18.10.2024
+### Задание 10: Работа с базой данных через ORM 18.11.2024
