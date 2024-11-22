@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse.Memory.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse.Manager.Tests", "NailWarehouse.Manager.Tests\NailWarehouse.Manager.Tests.csproj", "{C75ADD55-AA48-43ED-AE44-0D0E956CF3EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse.Memory.Database", "NailWarehouse.Memory.Database\NailWarehouse.Memory.Database.csproj", "{0119FCDA-396E-44E7-91AA-C22C024F33AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse.Database", "NailWarehouse.Database\NailWarehouse.Database.csproj", "{0119FCDA-396E-44E7-91AA-C22C024F33AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

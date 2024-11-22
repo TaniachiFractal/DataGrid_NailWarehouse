@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using NailWarehouse.Forms;
 using NailWarehouse.Manager;
-using NailWarehouse.Memory.Database;
+using NailWarehouse.Database;
 using Serilog;
 using Serilog.Extensions.Logging;
 

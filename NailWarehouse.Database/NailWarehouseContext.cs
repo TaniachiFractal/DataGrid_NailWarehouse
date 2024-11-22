@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using NailWarehouse.Models;
 
-namespace NailWarehouse.Memory.Database
+namespace NailWarehouse.Database
 {
     /// <summary>
     /// Контекст базы данных

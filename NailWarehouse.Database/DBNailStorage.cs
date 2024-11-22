@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NailWarehouse.Models;
 using NailWarehouse.Models.Interfaces;
 
-namespace NailWarehouse.Memory.Database
+namespace NailWarehouse.Database
 {
     /// <summary>
     /// Методы для работы с контекстом базы данных склада гвоздей <see cref="NailWarehouseContext"/>
