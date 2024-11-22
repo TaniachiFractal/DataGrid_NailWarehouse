@@ -8,8 +8,8 @@
     <ProjectGuid>{0119FCDA-396E-44E7-91AA-C22C024F33AC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NailWarehouse.Memory.Database</RootNamespace>
-    <AssemblyName>NailWarehouse.Memory.Database</AssemblyName>
+    <RootNamespace>NailWarehouse.Database</RootNamespace>
+    <AssemblyName>NailWarehouse.Database</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
