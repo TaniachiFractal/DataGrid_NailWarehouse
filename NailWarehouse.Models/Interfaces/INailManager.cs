@@ -33,5 +33,11 @@ namespace NailWarehouse.Models.Interfaces
         /// Получение суммарных данных
         /// </summary>
         Task<INailStats> GetStatsAsync();
+
+        /// <summary>
+        /// Получить гвоздь по ID
+        /// </summary>
+        Task<Nail> GetNailByIdAsync(Guid id);
+
     }
 }

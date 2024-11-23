@@ -1,7 +1,7 @@
 ﻿using NailWarehouse.Models;
-using NailWarehouse.ValidatableModels;
+using NailWarehouse.Web.Models;
 
-namespace NailWarehouse.Helpers
+namespace NailWarehouse.Web.Controllers.Helpers
 {
     /// <summary>
     /// Методы приведения одного типа к другому
@@ -34,11 +34,11 @@ namespace NailWarehouse.Helpers
             {
                 Id = validNail.Id,
                 Name = validNail.Name,
-                Length = validNail.Length,
+                Length = ((decimal?)validNail.Length) ?? 0.0M,
                 Material = validNail.Material,
-                Count = validNail.Count,
-                MinCount = validNail.MinCount,
-                Price = validNail.Price,
+                Count = ((decimal?)validNail.Count) ?? 0.0M,
+                MinCount = ((decimal?)validNail.MinCount) ?? 0.0M,
+                Price = ((decimal?)validNail.Price) ?? 0.0M,
             };
         }
     }

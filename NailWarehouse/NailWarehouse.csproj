@@ -197,7 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\ValidatableModels\ValidatableNail.cs" />
-    <Compile Include="Helpers\Converters.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Forms\InfoForm.cs">
       <SubType>Form</SubType>
