@@ -11,7 +11,7 @@ namespace NailWarehouse.Web.Models
         public string? RequestId { get; set; }
 
         /// <summary>
-        /// Показать данные ошибки
+        /// Нужно ли показывать данные ошибки
         /// </summary>
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
