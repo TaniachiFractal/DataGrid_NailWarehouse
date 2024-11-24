@@ -31,15 +31,15 @@
 		<br />
 
 		<label asp-for="Count" class="width150px">К-во на складе:</label>
-		<input asp-for="Count" value="@ResetCultureForDecimalPoint(Model.Count)" type="number" max="10000000" />
+		<input asp-for="Count" value="@ResetCultureForDecimalPoint(Model.Count)" type="number" min="0" max="10000000" />
 		<br />
 
 		<label asp-for="MinCount" class="width150px">Мин к-во: </label>
-		<input asp-for="MinCount" value="@ResetCultureForDecimalPoint(Model.MinCount)" type="number" max="10000000" />
+		<input asp-for="MinCount" value="@ResetCultureForDecimalPoint(Model.MinCount)" type="number" min="0" max="10000000" />
 		<br />
 
 		<label asp-for="Price" class="width150px">Цена без НДС, руб:</label>
-		<input asp-for="Price" type="number" value="@ResetCultureForDecimalPoint(Model.Price)" step="0.01" max="10000000" />
+		<input asp-for="Price" type="number" value="@ResetCultureForDecimalPoint(Model.Price)" step="0.01" min="0.01" max="10000000" />
 		<br />
 
 		<button type="submit">ОК</button>
