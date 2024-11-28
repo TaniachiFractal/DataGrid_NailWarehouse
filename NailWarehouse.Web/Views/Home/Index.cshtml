@@ -38,7 +38,7 @@
 	{
 		foreach (Nail nail in Model.DataList)
 		{
-			<tr onclick="SelectNail('@nail.Id', '@nail.Name', this)" tabindex="0" role="row" onkeydown="if(event.keyCode == 13 || event.keyCode == 32){event.target.click()}">
+			<tr onclick="SelectNail('@nail.Id', '@nail.Name', this)" tabindex="0" role="row" onkeydown="if(event.code == 'Enter'){event.target.click()}">
 				<td>@nail.Name</td>
 				<td>@nail.Length.ToString("N2")</td>
 				<td>@GetDescription(nail.Material)</td>
