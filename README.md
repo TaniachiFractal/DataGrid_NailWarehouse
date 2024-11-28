@@ -7,4 +7,4 @@
 ![Seq screenshot](https://github.com/TaniachiFractal/DataGrid_NailWarehouse/blob/master/SeqScreenshot.png)
 ### Задание 9: Юнит-тесты модулей хранилища и управления
 ### Задание 10: Работа с базой данных через ORM 18.11.2024
-### Задание 11: Сервер ASP .NET Core MVC
+### Задание 11: Сервер ASP .NET Core MVC 28.11.2024
