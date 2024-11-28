@@ -132,6 +132,23 @@ namespace NailWarehouse.Manager
             return null;
         }
 
+        async Task<Nail> INailManager.GetNailByIdAsync(Guid id)
+        {
+            try
+            {
+                IReadOnlyCollection<Nail> result = await nailStorage.GetAllAsync();
+                var nail = result.FirstOrDefault(x => x.Id == id);
+                if (nail != null)
+                { return nail; }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                LoggingMethods.LogError(logger, nameof(INailManager.GetNailByIdAsync), ex.Message);
+            }
+            return null;
+        }
+
         async Task<INailStats> INailManager.GetStatsAsync()
         {
             try

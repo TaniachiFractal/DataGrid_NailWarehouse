@@ -197,7 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\ValidatableModels\ValidatableNail.cs" />
-    <Compile Include="Helpers\Converters.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Forms\InfoForm.cs">
       <SubType>Form</SubType>
@@ -263,13 +262,13 @@
     <None Include="Resources\+.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NailWarehouse.Database\NailWarehouse.Database.csproj">
+      <Project>{0119fcda-396e-44e7-91aa-c22c024f33ac}</Project>
+      <Name>NailWarehouse.Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NailWarehouse.Manager\NailWarehouse.Manager.csproj">
       <Project>{1d4b7ea8-6e42-4cfb-baa6-4a244dcc1c10}</Project>
       <Name>NailWarehouse.Manager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NailWarehouse.Memory.Database\NailWarehouse.Memory.Database.csproj">
-      <Project>{0119fcda-396e-44e7-91aa-c22c024f33ac}</Project>
-      <Name>NailWarehouse.Memory.Database</Name>
     </ProjectReference>
     <ProjectReference Include="..\NailWarehouse.Models\NailWarehouse.Models.csproj">
       <Project>{B46521F0-7BE8-48DE-AFD0-E961E08FAB3F}</Project>

@@ -1,0 +1,53 @@
+﻿<!-- Главная страница -->
+@model NailWarehouse.Web.Models.IndexModel
+@{
+	ViewData["Title"] = "Домашняя страница";
+}
+
+<body onload="ClearSelectedNail()">
+</body>
+
+<form>
+	<button asp-controller="Home" asp-action="NailCreate" type="submit" accesskey="L"><u><b>Д</b></u>обавить</button>
+	<button asp-controller="Home" asp-action="NailEdit" type="submit" id="EditButton" disabled accesskey="H"+><u><b>Р</b></u>едактировать</button>
+	<button onclick="ConfirmDeleteNail()" type="button" id="DeleteButton" disabled accesskey="E" +><u><b>У</b></u>далить</button>
+	<div class="text-center">
+		<h5>
+			Количество позиций:
+			<b><u>@Model.FullCount.ToString("N0")</u></b>
+			Общ. сумма без НДС:
+			<b><u>@Model.FullSumNoTax.ToString("N2")</u></b>
+			Общ. сумма с НДС:
+			<b><u>@Model.FullSumWTax.ToString("N2")</u></b>
+		</h5>
+	</div>
+</form>
+
+
+<table class="container-fluid" id="MainTable">
+	<tr tabindex="-1">
+		<th>Название</th>
+		<th>Размер, мм</th>
+		<th>Материал</th>
+		<th>К-во</th>
+		<th>Мин к-во</th>
+		<th>Цена без НДС, руб</th>
+		<th>Сумма без НДС, руб</th>
+	</tr>
+	@if (Model.DataList != null)
+	{
+		foreach (Nail nail in Model.DataList)
+		{
+			<tr onclick="SelectNail('@nail.Id', '@nail.Name', this)" tabindex="0" role="row" onkeydown="if(event.code == 'Enter'){event.target.click()}">
+				<td>@nail.Name</td>
+				<td>@nail.Length.ToString("N2")</td>
+				<td>@GetDescription(nail.Material)</td>
+				<td>@nail.Count.ToString("N0")</td>
+				<td>@nail.MinCount.ToString("N0")</td>
+				<td>@nail.Price.ToString("N2")</td>
+				<td>@((nail.Price * nail.Count).ToString("N2"))</td>
+			</tr>
+		}
+	}
+</table>
+
