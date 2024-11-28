@@ -131,6 +131,7 @@ namespace NailWarehouse.Manager
             }
             return null;
         }
+
         async Task<Nail> INailManager.GetNailByIdAsync(Guid id)
         {
             try
@@ -147,6 +148,7 @@ namespace NailWarehouse.Manager
             }
             return null;
         }
+
         async Task<INailStats> INailManager.GetStatsAsync()
         {
             try

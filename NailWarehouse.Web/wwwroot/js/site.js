@@ -13,7 +13,7 @@ async function SelectNail(id, name, row) {
     let form = new FormData();
     form.append('id', id);
 
-    const response = await fetch('/Home/SelectNail', {
+    await fetch('/Home/SelectNail', {
         method: 'POST',
         body: form,
     });
@@ -44,8 +44,8 @@ async function ConfirmDeleteNail(id) {
     let nailName = localStorage.getItem(SelectedNailNameKey);
     if (nailName != null) {
         if (confirm(`Точно удалить гвоздь "${nailName}"? Это действие необратимо`)) {
-            const response = await fetch('/Home/DeleteNail', {
-                method: 'GET'
+            await fetch('/Home/DeleteNail', {
+                method: 'DELETE'
             });
             window.location.reload();
         }

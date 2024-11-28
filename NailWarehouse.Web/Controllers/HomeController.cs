@@ -84,7 +84,7 @@ namespace NailWarehouse.Web.Controllers
         /// <summary>
         /// Удалить гвоздь из базы данных
         /// </summary>+
-        [HttpGet]
+        [HttpDelete]
         public async Task<IActionResult> DeleteNail()
         {
             await StaticAppModel.NailManager.DeleteAsync(StaticAppModel.SelectedNailId);
