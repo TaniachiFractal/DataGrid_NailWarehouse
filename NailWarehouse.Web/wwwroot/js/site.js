@@ -52,8 +52,8 @@ async function ConfirmDeleteNail(id) {
     }
 }
 
-/** Очистить название выбранного гвоздя из памяти */
-function ClearSelectedNail() {
+/** Очистить название выбранного гвоздя из памяти и заблокировать кнопки */
+function OnWindowReload() {
     localStorage.removeItem(SelectedNailNameKey);
 
     document.getElementById('EditButton').disabled = true;
