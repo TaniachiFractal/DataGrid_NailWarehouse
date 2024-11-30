@@ -4,13 +4,13 @@
 	ViewData["Title"] = "Домашняя страница";
 }
 
-<body onload="ClearSelectedNail()">
+<body onload="OnWindowReload()">
 </body>
 
 <form>
 	<button asp-controller="Home" asp-action="NailCreate" type="submit" accesskey="L"><u><b>Д</b></u>обавить</button>
-	<button asp-controller="Home" asp-action="NailEdit" type="submit" id="EditButton" disabled accesskey="H"+><u><b>Р</b></u>едактировать</button>
-	<button onclick="ConfirmDeleteNail()" type="button" id="DeleteButton" disabled accesskey="E" +><u><b>У</b></u>далить</button>
+	<button asp-controller="Home" asp-action="NailEdit" type="submit" id="EditButton" disabled accesskey="H"><u><b>Р</b></u>едактировать</button>
+	<button onclick="ConfirmDeleteNail()" type="button" id="DeleteButton" disabled accesskey="E"><u><b>У</b></u>далить</button>
 	<div class="text-center">
 		<h5>
 			Количество позиций:
@@ -47,6 +47,7 @@
 				<td>@nail.Price.ToString("N2")</td>
 				<td>@((nail.Price * nail.Count).ToString("N2"))</td>
 			</tr>
+
 		}
 	}
 </table>
