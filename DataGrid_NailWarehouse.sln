@@ -23,11 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse.Manager.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse.Database", "NailWarehouse.Database\NailWarehouse.Database.csproj", "{0119FCDA-396E-44E7-91AA-C22C024F33AC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models and Controllers", "Models and Controllers", "{C9879F1A-A1FC-4F9B-973A-5BB6114942D5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Models and Controllers", "Common Models and Controllers", "{C9879F1A-A1FC-4F9B-973A-5BB6114942D5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{17C3927C-33EB-42B4-804F-AB0DF9246E49}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visual Interfaces", "Visual Interfaces", "{17C3927C-33EB-42B4-804F-AB0DF9246E49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailWarehouse.Web", "NailWarehouse.Web\NailWarehouse.Web.csproj", "{80F0B0B0-83C6-43C7-9FE0-213DB20BBF06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NailWarehouse.Web", "NailWarehouse.Web\NailWarehouse.Web.csproj", "{80F0B0B0-83C6-43C7-9FE0-213DB20BBF06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
